@@ -237,7 +237,7 @@ footer{
             display: flex;
             justify-content: center;
             backdrop-filter: blur(10px);
-            background-color: rgba(0, 128, 255, 0.5);
+            background-color: black;
             .cajaTraseraRegister{
                 margin: 100px 40px;
                 margin-left: 400px;
@@ -271,6 +271,7 @@ footer{
                 }
             }
         }
+
         .containerLogin{
             display: flex;
             align-items: center;

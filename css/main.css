@@ -357,4 +357,6 @@ footer {
 
 .mainInicioMayorista {
   display: grid;
-  grid-template-areas: "carrousel carrousel carrousel" "sidebar desarrollo desarrollo" "sidebar desarrollo desarrollo"; }
+  grid-template-areas: "carrousel carrousel carrousel"
+ "sidebar desarrollo desarrollo"
+ "sidebar desarrollo desarrollo"; }
