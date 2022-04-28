@@ -1,0 +1,449 @@
+@import "media/responsive";
+
+//resetear
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+//html INDEX
+/*html INDEX*/
+.headerIndex{
+    background-color: rgba(170, 178, 183, 0.655);
+    width: 100%;
+    height: 90px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100; 
+
+    .containerHeaderIndex{
+        max-width: 2100px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-top: 0px;
+        justify-content: space-between;
+        margin: auto;
+        padding-left: 20px;
+        align-items: center;
+        #iconoMenu{
+            display: none;
+            padding-right: 120px;
+        }
+        .logoHeaderIndex {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 51px;
+            img{
+                width: 80px;
+            }
+        }
+        
+        .navHeaderIndex{
+            position: relative;
+            height: 100%;
+            display: flex;
+            ul{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 20px;
+                li{
+                    padding: 0px 20px;
+                    list-style: none; 
+                    a{
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #424242;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+                }
+            }
+        }
+    
+    }
+    
+}
+.mainIndex{
+    background-image: url(../img/fondoRegistro.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .containerMainIndex{
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 100;
+        .containerInfoIndex{
+            max-width: 40%;
+            margin-top: 40px;
+            z-index: 2;
+            h1{
+                max-width: 400px;
+                font-size: 55px;
+                font-weight: 1000;
+                color: black;
+            }
+            h2{
+                font-size: 40px;
+                font-weight: 700;
+                color: #424242;
+                margin-top: -20px;
+            }
+            p{
+                margin-top: 10px;
+                color: lightgray;
+                border: #212121;
+                padding-bottom: 40px;
+                padding-top: 30px;
+            }
+            a{
+                padding: 10px 40px;
+                margin-top: 40px;
+                font-size: 18px;
+                font-weight: 600;
+                border: none;
+                color: whitesmoke;
+                background-color: #757575;
+                border-radius: 20px;
+                box-shadow: 1px 1px 30px -5px #BDBDBD;
+                cursor: pointer;
+                transition: box-shadow 200ms;
+                &:hover{
+                    box-shadow: 1px 1px 30px -5px #757575;
+                }
+            }
+            
+        }
+        .containerVectorIndex{
+            position: relative;
+            img{
+                position: absolute;
+                bottom: -20px;
+                right: 0px;
+                width: 500px;
+            }
+        }
+        @media (max-width:905px) {
+            .containerVectorIndex{
+                img{
+                display: none;
+                }
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    padding: 1px 0px;
+    background-color: rgba(170, 178, 183, 0.655);
+    .containerFooter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 80px;
+        .boxFooter{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            .logoFooter{
+                height: 100%;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                img{
+                    width: 80px;
+                }
+            }
+            .terminos{
+                max-width: 350px;
+                margin-top: 20px;
+                font-weight: 500;
+                color: black;
+                font-size: 18px;
+            }
+            h2{
+                margin-bottom: 30px;
+                color: black;
+                font-weight: 700;
+            }
+            a{
+                margin-top: 10px;
+                color: black;
+                font-weight: 600;
+                &:hover{
+                    opacity: 0.8;
+                }
+                .fab{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .boxDerechosReservados{
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+        p{
+            margin-top: 20px;
+            color: black;
+        }
+        hr{
+            height: 1px;
+            background-color: black;
+        }
+        
+    }
+}
+
+//boton iniciaSesion.html index
+/*boton iniciaSesion.html index*/
+.mainRegister{
+    background-image: url(../img/fondoRegistro.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 60px;
+    margin: auto;
+    .containerMainRegister{
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        position: relative;
+        padding-top: 10%;
+        .cajaTrasera{
+            width: 100%;
+            padding: 10px 20px;
+            margin-left: 40px;
+            display: flex;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 128, 255, 0.5);
+            .cajaTraseraRegister{
+                margin: 100px 40px;
+                margin-left: 400px;
+                color: white;
+                transition: all 500ms;
+                h3{
+                    font-weight: 400;
+                    font-size: 26px;
+                }
+                p{
+                    margin-top: 30px;
+                }
+                button{
+                    margin-top: 30px;
+                    padding: 10px 40px;
+                    border: 2px solid #fff;
+                    background: transparent;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    outline: none;
+                    transition: all 300ms;
+                    a{
+                        color: white;
+                        &:hover{
+                            background-color: #fff;
+                            color: white;
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        .containerLogin{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 380px;
+            position: relative;
+            top: -185px;
+            left: 10px;
+            .formularioLogin{
+                width: 100%;
+                padding: 80px 20px;
+                background: #fff;
+                position: absolute;
+                border-radius: 20px;
+                h2{
+                    font-size: 30px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    color: #46A2FD;
+                }
+                input{
+                    width: 100%;
+                    margin-top: 20px;
+                    padding: 10px;
+                    border: none;
+                    background: #f2f2f2;
+                    font-size: 16px;
+                    outline: none;
+                }
+                button{
+                    padding: 10px 40px;
+                    margin-top: 40px;
+                    border: none;
+                    font-size: 16px;
+                    background: #46A2FD;
+                    color: white;
+                    cursor: pointer;
+                    outline: none;
+                    a{
+                        color: white;
+                        cursor: pointer;
+                        outline: none;
+                    }
+                }
+                .botonRegistrate{
+                    display: none;
+                }
+                @media (max-width:700px){
+                    .botonRegistrate{
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+//INICIASESION- registrarse.html
+/*INICIASESION- registrarse.html*/
+.bodyRegistrarse{
+    background-image: url(../img/fondoRegistro.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    .formRegistrarse{
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 380px;
+        position: relative;
+        height: 600px;
+        form{
+            width: 100%;
+            padding: 80px 20px;
+            background: #fff;
+            position: relative;
+            border-radius: 20px;
+            h2{
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+                color: #46A2FD;
+            }
+            input{
+                width: 100%;
+                margin-top: 20px;
+                padding: 10px;
+                border: 2px;
+                background: #f2f2f2;
+                font-size: 16px;
+                outline: none;
+                border-radius: 20px;
+            }
+            button{
+                padding: 10px 40px;
+                margin-top: 40px;
+                border: none;
+                font-size: 16px;
+                background: #46A2FD;
+                color: white;
+                cursor: pointer;
+                outline: none;
+                border-radius: 20px;
+                a{
+                    color: white;
+                    cursor: pointer;
+                    outline: none;
+                }
+            }
+        }
+
+    }
+}
+
+//boton comoTrabajamos.html
+/*boton comoTrabajamos.html */
+.containerCards{
+    background-image: url(../img/fondoRegistro.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    .card{
+        margin: 80px 60px;
+        border: 2px solid lightgrey;
+        border-radius: 10px;
+        .coverCard{
+            img{
+                border-radius: 10px;
+            }
+        }
+        h2{
+            color: lightgrey;
+            font-weight: 800;
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif;
+        }
+        p{
+            padding: 8px;
+            width: 400px;
+            color: lightgrey;
+            font-weight: 200;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .footerCard{
+            h3, i{
+                width: 400px;
+                color: lightgrey;
+                font-weight: 200;
+                font-size: 15px;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+}
+
+//boton inicioMayorista.html
+.mainInicioMayorista{
+    display: grid;
+    grid-template-areas:
+     "carrousel carrousel carrousel"
+     "sidebar desarrollo desarrollo"
+     "sidebar desarrollo desarrollo";
+}
