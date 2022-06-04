@@ -4,36 +4,278 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mayorista dedicado a la venta de articulos de copetin ya sea, salados, dulces y, tambien por otro lado, ofrecemos una amplia variedad de panificacion">
+    <meta name="keywords" content="HTML, CSS, SASS, GITHUB, RESPONSIVE">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/f76e0ff4d6.js" crossorigin="anonymous"></script>
     <title>MacroFer- Inicio</title>
 </head>
-<body>
-    <header>
-        <div class="containerHeaderInicio">
-
-            <div class="logo">
-                <a href="#"><img src="../img/logoHeader.png" alt="logo"></a>
+<body class="inicioMayorista">
+    <header class="headerInicio">
+        
+        <div class="logoVolverInicio">
+    
+            <div class="logoInicio">
+                <a href="../botonesIndex/inicioMayorista.html"><img src="../img/logoHeader.png" alt=""></a>
             </div>
-
-            <div class="buscador">
-                <input type="search" placeholder="Buscá sin miedo">
+            
+            <div class="volverInicio">
+                <a href="../index.html">Página principal</a>
             </div>
-
-            <div class="menuInicio">
-                <nav>
-                    <a href="#">Salados</a>
-                    <a href="#">Dulces</a>
-                    <a href="#">Panificación</a>
-                </nav>
-            </div>
-
+    
         </div>
+    
+        <div class="buscadorInicio">
+            <input type="search" placeholder="">
+        </div>
+
+        <div class="carritoLoginInicio">
+            <nav>
+                <ul>
+
+                    <div class="bars">
+                        <li>
+                            <i class="fa-solid fa-bars" id="icon-menu"></i>
+                        </li>
+                    </div>
+
+                    <div class="carritoInicio">
+                        <li>
+    
+                                <a href="#"><img src="../img/carritoCompra.svg" alt=""></a>
+    
+                        </li>
+                    </div>
+    
+                    <div class="loginInicio">
+                        <li>
+                            <a href="../botonesIndex/iniciarSesion.html"><img src="../img/usuarioInicio.svg" alt=""></a>
+                        </li>
+                    </div>
+    
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="navbarInicio">
+            <nav>
+                <ul>
+                    <li><a href="../botonesMayorista/salados.html">Salados</a></li>
+                    <li><a href="../botonesMayorista/dulces.html">Dulces</a></li>
+                    <li><a href="../botonesMayorista/panificacion.html">Panificación</a></li>
+                </ul>
+            </nav>
+        </div>
+    
     </header>
-    <main class="mainInicioMayorista">
-        <div class="carrousel">CARROUSEL</div>
-        <aside class="sidebar">SIDEBAR</aside>
-        <article class="desarrollo">DESARROLLO</article>
+    <main class="mainInicio">
+        <section id="slider">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/slider1.jpg" class="d-block w-100" alt="..." >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/slider2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <section class="productosDestacadosInicio">
+            <h1 class="tituloInicio">PRODUCTOS DESTACADOS</h1>
+            <div class="containerCardsInicio">
+                <div class="cardInicio">
+                    <div class="coverCardInicio">
+                        <a href="../botonesMayorista/dulces.html"><img src="../img/BimboMadalenaVainilla.png" alt=""></a>
+                    </div>
+                    <h2>BIMBO MADALENA 210g</h2>
+                    <h3>Sabor vainilla, probá también las demás variedades.</h3>
+                    <hr>
+                    <div class="footerCardInicio">
+                        <p>$129,00</p>
+                        <i>04 Abril</i>
+                    </div>
+                    
+                </div>
+                <div class="cardInicio">
+                    <div class="coverCardInicio">
+                        <a href="../botonesMayorista/panificacion.html"><img src="../img/BimboHambArtesano.png" alt=""></a>
+                    </div>
+                    <h2>PAN P HAMB TIPO BRIOCHE 240g</h2>
+                    <h3>Pan hecho a base de miel, con la receta del famoso pan tipo artesano.</h3>
+                    <hr>
+                    <div class="footerCardInicio">
+                        <p>$254,00</p>
+                        <i>04 Abril</i>
+                    </div>
+                    
+                </div>
+                <div class="cardInicio">
+                    <div class="coverCardInicio">
+                        <a href="../botonesMayorista/salados.html"><img src="../img/papasfritas.jpg" alt=""></a>
+                    </div>
+                    <h2>PAPAS FRITAS DON JUSTO 1Kg</h2>
+                    <h3>Clásicas, Ketchup, Cebolla</h3>
+                    <hr>
+                    <div class="footerCardInicio">
+                        <p>$700,00</p>
+                        <i>04 Abril</i>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="promoTarjetasInicio">
+
+            <div class="containerBoxInicio">
+                <div class="boxInicio">
+                    <img src="../img/tarjetaCredito.svg" alt="">
+                    <h4>Tarjetas prom bancarias.</h4>
+                </div>
+                <div class="boxInicio">
+                    <img src="../img/cuotaSinTarjeta.svg" alt="">
+                    <h4>Cuotas sin tarjeta.</h4>
+                </div>
+                <div class="boxInicio">
+                    <img src="../img/cash.svg" alt="">
+                    <h4>Efectivo.</h4>
+                </div>
+                <div class="boxInicio">
+                    <img src="../img/plus.svg" alt="">
+                    <h4>Ver más.</h4>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="logosPanificacion">
+            <div class="containerLogoPanificacion">
+
+                <div class="boxLogoPanificacion
+                ">
+                    <a href="../botonesMayorista/panificacion.html">
+                        <img src="../img/logoOroweat.png" alt="">
+                    </a>
+                </div>
+
+                <div class="boxLogoPanificacion
+                ">
+                    <a href="../botonesMayorista/dulces.html">
+                        <img src="../img/logoValente.png" alt="">
+                    </a>
+                </div>
+
+                <div class="boxLogoPanificacion
+                ">
+                    <a href="../botonesMayorista/panificacion.html">
+                        <img src="../img/logoLactal.png" alt="">
+                    </a>
+                </div>
+
+                <div class="boxLogoPanificacion
+                ">
+                    <a href="../botonesMayorista/dulces.html">
+                        <img src="../img/logoMarinela.png" alt="">
+                    </a>
+                </div>
+
+                <div class="boxLogoPanificacion
+                ">
+                    <a href="../botonesMayorista/panificacion.html">
+                        <img src="../img/LogoRapiditas.png" alt="">
+                    </a>
+                </div>
+
+                <div class="boxLogoPanificacion
+                ">
+                    <a href="../botonesMayorista/panificacion.html">
+                        <img src="../img/logoArtesano.png" alt="">
+                    </a>
+                </div>
+
+                <div class="boxLogoPanificacion
+                ">
+                    <a href="../botonesMayorista/panificacion.html">
+                        <img src="../img/logoFargo.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section class="publicidadCrowie">
+            <div class="fotoCrowie">
+                <a href="../botonesMayorista/dulces.html">
+                    <img src="../img/publicidadCrowieMinibars.jpg" class="img-fluid" alt="...">
+                </a>
+            </div>
+            <div class="fotoCrowieMix">
+                <a href="../botonesMayorista/dulces.html">
+                    <img src="../img/CrowieMix.jpg" class="img-fluid" alt="...">
+                </a>
+            </div>
+        </section>
+        <section></section>
     </main>
-    <footer></footer>
+    <footer class="footerIndex">
+        <div class="containerFooter">
+                
+            <div class="boxFooter">
+    
+                 <div class="logoFooter">
+                     <a href="../botonesIndex/inicioMayorista.html"><img src="../img/logoHeader.png" alt="logoFooter"></a>
+                </div>
+
+                <div class="terminos">
+                     <p>Líder en la region, crea nuevos servicios para acercarte a las mejores ofertas para tu negocio. Contamos con una amplia variedad de productos. Hacemos envíos a todo Mendoza.</p>
+                 </div>
+    
+            </div>
+    
+            <div class="boxFooter">
+                <h2>Soluciones</h2>
+                <a href="#">ATENCIÓN AL CLIENTE</a>
+                <a href="../botonesIndex/registrarse.html"> REGISTRATE PARA RECIBIR NOVEDADES</a>
+             </div>
+    
+             <div class="boxFooter">
+                <h2>Acerca de MacroFer</h2>
+                <a href="#">Noticias</a>
+                <a href="#">Empleo</a>
+                <a href="#">Inversores</a>
+                <a href="#">Sustentabilidad</a>
+             </div>
+    
+            <div class="boxFooter">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.facebook.com/NFLPDA/"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://twitter.com/nachof5"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="https://www.instagram.com/nachofernandez5/"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+    
+        </div>
+    
+        <div class="boxDerechosReservados">
+            <hr>
+            <p>Todos los derechos reservados 2022 <b>Fernandez, Juan Ignacio</b>
+            </p>
+        </div>
+            
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>

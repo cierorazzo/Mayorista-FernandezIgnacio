@@ -2,18 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none; }
+  text-decoration: none;
+  list-style: none; }
 
 /*html INDEX*/
 .headerIndex {
-  background-color: rgba(170, 178, 183, 0.655);
+  background-color: rgba(200, 217, 228, 0.874);
   width: 100%;
   height: 90px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100; }
+  z-index: 100;
+  border-radius: 5px; }
   .headerIndex .containerHeaderIndex {
     max-width: 2100px;
     width: 100%;
@@ -24,9 +26,6 @@
     margin: auto;
     padding-left: 20px;
     align-items: center; }
-    .headerIndex .containerHeaderIndex #iconoMenu {
-      display: none;
-      padding-right: 120px; }
     .headerIndex .containerHeaderIndex .logoHeaderIndex {
       height: 100%;
       display: flex;
@@ -52,7 +51,17 @@
             font-size: 18px;
             font-weight: bold;
             color: #424242;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+            font-family: "Poppins", sans-serif; }
+          .headerIndex .containerHeaderIndex .navHeaderIndex ul li #icon-menu {
+            display: none;
+            cursor: pointer;
+            font-size: 24px; }
+          @media (max-width: 823px) {
+            .headerIndex .containerHeaderIndex .navHeaderIndex ul li #icon-menu {
+              display: block; } }
+        @media (max-width: 823px) {
+          .headerIndex .containerHeaderIndex .navHeaderIndex ul li a {
+            display: none; } }
 
 .mainIndex {
   background-image: url(../img/fondoRegistro.jfif);
@@ -68,7 +77,7 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-top: 100; }
     .mainIndex .containerMainIndex .containerInfoIndex {
       max-width: 40%;
@@ -86,8 +95,7 @@
         margin-top: -20px; }
       .mainIndex .containerMainIndex .containerInfoIndex p {
         margin-top: 10px;
-        color: lightgray;
-        border: #212121;
+        color: #fff;
         padding-bottom: 40px;
         padding-top: 30px; }
       .mainIndex .containerMainIndex .containerInfoIndex a {
@@ -110,60 +118,63 @@
         position: absolute;
         bottom: -20px;
         right: 0px;
-        width: 500px; }
+        width: 400px;
+        margin-right: 40px; }
     @media (max-width: 905px) {
       .mainIndex .containerMainIndex .containerVectorIndex img {
         display: none; } }
 
-footer {
+.footerIndex {
   width: 100%;
   padding: 1px 0px;
-  background-color: rgba(170, 178, 183, 0.655); }
-  footer .containerFooter {
+  background-color: rgba(200, 217, 228, 0.874); }
+  .footerIndex .containerFooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
     margin-top: 80px; }
-    footer .containerFooter .boxFooter {
+    .footerIndex .containerFooter .boxFooter {
       display: flex;
       flex-direction: column;
       padding: 40px; }
-      footer .containerFooter .boxFooter .logoFooter {
+      .footerIndex .containerFooter .boxFooter .logoFooter {
         height: 100%;
         display: flex;
         justify-content: left;
         align-items: center; }
-        footer .containerFooter .boxFooter .logoFooter img {
+        .footerIndex .containerFooter .boxFooter .logoFooter img {
           width: 80px; }
-      footer .containerFooter .boxFooter .terminos {
+      .footerIndex .containerFooter .boxFooter .terminos {
         max-width: 350px;
         margin-top: 20px;
         font-weight: 500;
         color: black;
         font-size: 18px; }
-      footer .containerFooter .boxFooter h2 {
+      .footerIndex .containerFooter .boxFooter h2 {
+        text-decoration: none;
         margin-bottom: 30px;
         color: black;
         font-weight: 700; }
-      footer .containerFooter .boxFooter a {
+      .footerIndex .containerFooter .boxFooter a {
+        text-decoration: none;
         margin-top: 10px;
         color: black;
         font-weight: 600; }
-        footer .containerFooter .boxFooter a:hover {
+        .footerIndex .containerFooter .boxFooter a:hover {
           opacity: 0.8; }
-        footer .containerFooter .boxFooter a .fab {
+        .footerIndex .containerFooter .boxFooter a .fab {
           font-size: 25px; }
-  footer .boxDerechosReservados {
+  .footerIndex .boxDerechosReservados {
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 40px; }
-    footer .boxDerechosReservados p {
+    .footerIndex .boxDerechosReservados p {
       margin-top: 20px;
       color: black; }
-    footer .boxDerechosReservados hr {
+    .footerIndex .boxDerechosReservados hr {
       height: 1px;
       background-color: black; }
 
@@ -186,6 +197,7 @@ footer {
     position: relative;
     padding-top: 10%; }
     .mainRegister .containerMainRegister .cajaTrasera {
+      font-family: "Poppins", sans-serif;
       width: 100%;
       padding: 10px 20px;
       margin-left: 40px;
@@ -219,7 +231,11 @@ footer {
               background-color: #fff;
               color: white;
               background: transparent; }
+    @media (max-width: 700px) {
+      .mainRegister .containerMainRegister .cajaTrasera {
+        display: none; } }
     .mainRegister .containerMainRegister .containerLogin {
+      font-family: "Poppins", sans-serif;
       display: flex;
       align-items: center;
       width: 100%;
@@ -264,8 +280,11 @@ footer {
         @media (max-width: 700px) {
           .mainRegister .containerMainRegister .containerLogin .formularioLogin .botonRegistrate {
             display: block; } }
+  @media (max-width: 700px) {
+    .mainRegister .containerMainRegister {
+      margin-top: 420px; } }
 
-/*INICIASESION- registrarse.html*/
+/*INICIASESION- registrarse.html index*/
 .bodyRegistrarse {
   background-image: url(../img/fondoRegistro.jfif);
   background-size: cover;
@@ -273,6 +292,7 @@ footer {
   background-position: center;
   background-attachment: fixed; }
   .bodyRegistrarse .formRegistrarse {
+    font-family: "Poppins", sans-serif;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -316,7 +336,7 @@ footer {
           cursor: pointer;
           outline: none; }
 
-/*boton comoTrabajamos.html */
+/*boton comoTrabajamos.html index*/
 .containerCards {
   background-image: url(../img/fondoRegistro.jfif);
   background-size: cover;
@@ -340,23 +360,626 @@ footer {
       color: lightgrey;
       font-weight: 800;
       font-size: 30px;
-      font-family: 'Poppins', sans-serif; }
+      font-family: "Poppins", sans-serif; }
     .containerCards .card p {
       padding: 8px;
       width: 400px;
       color: lightgrey;
       font-weight: 200;
       font-size: 15px;
-      font-family: 'Poppins', sans-serif; }
+      font-family: "Poppins", sans-serif; }
     .containerCards .card .footerCard h3, .containerCards .card .footerCard i {
       width: 400px;
       color: lightgrey;
       font-weight: 200;
       font-size: 15px;
-      font-family: 'Poppins', sans-serif; }
+      font-family: "Poppins", sans-serif; }
 
-.mainInicioMayorista {
+/*boton sobreNosotros.html index*/
+.sobreNosotros {
+  background-image: url(../img/fondoRegistro.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+  .sobreNosotros .videoSobreNosotros {
+    overflow: hidden;
+    display: flex;
+    width: 450px;
+    margin-top: 120px; }
+    .sobreNosotros .videoSobreNosotros iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute; }
+
+/*boton incioMayorista.html*/
+.inicioMayorista .headerInicio {
+  grid-area: headerInicio;
   display: grid;
-  grid-template-areas: "carrousel carrousel carrousel"
- "sidebar desarrollo desarrollo"
- "sidebar desarrollo desarrollo"; }
+  grid-template-columns: 200px auto 200px;
+  grid-template-areas: "logoVolverInicio buscadorInicio carritoLoginInicio" "logoVolverInicio navbarInicio carritoLoginInicio";
+  background-color: rgba(200, 217, 228, 0.874);
+  width: 100%;
+  height: 90px;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  border-radius: 5px; }
+  .inicioMayorista .headerInicio .logoVolverInicio {
+    grid-area: logoVolverInicio;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .inicioMayorista .headerInicio .logoVolverInicio .logoInicio {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 89px;
+      padding-bottom: 13px; }
+      .inicioMayorista .headerInicio .logoVolverInicio .logoInicio img {
+        width: 80px; }
+    .inicioMayorista .headerInicio .logoVolverInicio .volverInicio a {
+      font-size: 10px;
+      font-weight: bold;
+      color: #424242;
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      padding: 6px;
+      padding-bottom: 22px;
+      display: flex;
+      justify-content: center; }
+  .inicioMayorista .headerInicio .buscadorInicio {
+    grid-area: buscadorInicio;
+    margin-left: 70px;
+    margin-top: 10px; }
+    .inicioMayorista .headerInicio .buscadorInicio input {
+      width: 800px;
+      border-radius: 15px;
+      background-color: rgba(88, 93, 96, 0.655); }
+  @media (max-width: 1235px) {
+    .inicioMayorista .headerInicio .buscadorInicio input {
+      width: 650px; } }
+  @media (max-width: 1070px) {
+    .inicioMayorista .headerInicio .buscadorInicio input {
+      display: none; } }
+  @media (max-width: 895px) {
+    .inicioMayorista .headerInicio .buscadorInicio input {
+      display: none; } }
+  @media (max-width: 802px) {
+    .inicioMayorista .headerInicio .buscadorInicio input {
+      display: none; } }
+  @media (max-width: 605px) {
+    .inicioMayorista .headerInicio .buscadorInicio input {
+      display: none; } }
+  .inicioMayorista .headerInicio .carritoLoginInicio {
+    grid-area: carritoLoginInicio; }
+    .inicioMayorista .headerInicio .carritoLoginInicio ul {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      padding-top: 28px; }
+      .inicioMayorista .headerInicio .carritoLoginInicio ul li {
+        padding: 5px;
+        text-decoration: none;
+        list-style: none; }
+    .inicioMayorista .headerInicio .carritoLoginInicio .bars #icon-menu {
+      display: none; }
+    @media (max-width: 930px) {
+      .inicioMayorista .headerInicio .carritoLoginInicio .bars #icon-menu {
+        display: block;
+        cursor: pointer;
+        font-size: 24px; } }
+    .inicioMayorista .headerInicio .carritoLoginInicio .carritoInicio {
+      padding-right: 20px; }
+      .inicioMayorista .headerInicio .carritoLoginInicio .carritoInicio img {
+        width: 20px; }
+    .inicioMayorista .headerInicio .carritoLoginInicio .loginInicio img {
+      width: 20px; }
+  @media (max-width: 930px) {
+    .inicioMayorista .headerInicio .carritoLoginInicio .carritoInicio, .inicioMayorista .headerInicio .carritoLoginInicio .loginInicio {
+      display: none; } }
+  .inicioMayorista .headerInicio .navbarInicio {
+    grid-area: navbarInicio; }
+    .inicioMayorista .headerInicio .navbarInicio ul {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px; }
+      .inicioMayorista .headerInicio .navbarInicio ul li {
+        padding: 0px 40px;
+        list-style: none; }
+        .inicioMayorista .headerInicio .navbarInicio ul li a {
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bold;
+          color: #424242;
+          font-family: "Poppins", sans-serif;
+          padding: 10px; }
+  @media (max-width: 895px) {
+    .inicioMayorista .headerInicio .navbarInicio {
+      display: none; } }
+
+.inicioMayorista .mainInicio {
+  background-image: url(../img/fondoPantalla.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto; }
+  .inicioMayorista .mainInicio .productosDestacadosInicio .tituloInicio {
+    text-align: center;
+    margin-top: 40px;
+    color: #212121; }
+  .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    font-family: "Poppins", sans-serif; }
+    .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio {
+      background-image: url(../img/fondoPagina.jpg);
+      background-position: 200px;
+      width: 350px;
+      margin: 5px;
+      padding: 20px;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      background: rgba(255, 255, 255, 0.1);
+      border-left: 2px solid rgba(255, 255, 255, 0.5);
+      border-top: 1.5px solid rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      transition: all 300ms; }
+      .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio:hover {
+        transform: translateY(-12px);
+        transform: scale(0, 2, 2);
+        z-index: 2; }
+      .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio .coverCardInicio {
+        display: block;
+        justify-content: space-between;
+        width: 200px;
+        height: 200px;
+        border-radius: 14px;
+        overflow: hidden; }
+        .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio .coverCardInicio img {
+          border-radius: 10px;
+          width: 204px;
+          height: 100%;
+          transition: all 100ms; }
+          .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio .coverCardInicio img:hover {
+            transform: scale(1.1); }
+      .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio h2 {
+        color: lightgray;
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 10px; }
+      .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio h3 {
+        color: lightgray;
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 500; }
+      .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio p {
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: 200;
+        text-align: center;
+        color: #153758;
+        letter-spacing: 0.5px; }
+      .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio hr {
+        margin-top: 20px;
+        border: none;
+        height: 0.1px;
+        background-color: #212121; }
+      .inicioMayorista .mainInicio .productosDestacadosInicio .containerCardsInicio .cardInicio .footerCardInicio {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between; }
+  .inicioMayorista .mainInicio .promoTarjetasInicio .containerBoxInicio {
+    margin-top: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px; }
+    .inicioMayorista .mainInicio .promoTarjetasInicio .containerBoxInicio .boxInicio {
+      width: 273px;
+      height: 100px;
+      background: rgba(200, 217, 228, 0.874);
+      margin: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 4px;
+      cursor: pointer; }
+      .inicioMayorista .mainInicio .promoTarjetasInicio .containerBoxInicio .boxInicio:hover {
+        transform: scale(1.008, 1.008);
+        box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
+        transition: 500ms;
+        z-index: 1; }
+      .inicioMayorista .mainInicio .promoTarjetasInicio .containerBoxInicio .boxInicio img {
+        width: 23px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .inicioMayorista .mainInicio .promoTarjetasInicio .containerBoxInicio .boxInicio h4 {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #000;
+        text-decoration: none; }
+  @media (max-width: 1108px) {
+    .inicioMayorista .mainInicio .promoTarjetasInicio .containerBoxInicio {
+      margin-top: 1130px; } }
+  @media (max-width: 741px) {
+    .inicioMayorista .mainInicio .promoTarjetasInicio .containerBoxInicio {
+      margin-top: 1630px; } }
+  .inicioMayorista .mainInicio .logosPanificacion .containerLogoPanificacion {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-top: 100px; }
+    .inicioMayorista .mainInicio .logosPanificacion .containerLogoPanificacion .boxLogoPanificacion {
+      background-color: #fff;
+      margin: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid lightgray;
+      border-radius: 50%;
+      height: 120px; }
+      .inicioMayorista .mainInicio .logosPanificacion .containerLogoPanificacion .boxLogoPanificacion img {
+        width: 125px;
+        border-radius: 50%; }
+  .inicioMayorista .mainInicio .publicidadCrowie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px; }
+    .inicioMayorista .mainInicio .publicidadCrowie .fotoCrowie {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 30px;
+      padding: 10px;
+      margin-left: 50px; }
+      .inicioMayorista .mainInicio .publicidadCrowie .fotoCrowie img {
+        border-radius: 4px;
+        width: 450px;
+        height: 550px; }
+    .inicioMayorista .mainInicio .publicidadCrowie .fotoCrowieMix {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 30px;
+      padding: 10px;
+      margin-left: 50px; }
+      .inicioMayorista .mainInicio .publicidadCrowie .fotoCrowieMix img {
+        border-radius: 4px;
+        width: 350px;
+        height: 550px; }
+
+.gridcontainerSalados {
+  display: grid;
+  height: 1000px;
+  padding-top: 90px;
+  grid-template-columns: 200px auto;
+  grid-template-areas: "headerInicio headerInicio" "sidebarSalados mainSalados" "footerIndex footerIndex"; }
+  .gridcontainerSalados .headerInicio {
+    grid-area: headerInicio;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-areas: "logoVolverInicio buscadorInicio carritoLoginInicio" "logoVolverInicio navbarInicio carritoLoginInicio";
+    background-color: rgba(200, 217, 228, 0.874);
+    width: 100%;
+    height: 90px;
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    border-radius: 5px; }
+    .gridcontainerSalados .headerInicio .logoVolverInicio {
+      grid-area: logoVolverInicio;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .gridcontainerSalados .headerInicio .logoVolverInicio .logoInicio {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 89px;
+        padding-bottom: 13px; }
+        .gridcontainerSalados .headerInicio .logoVolverInicio .logoInicio img {
+          width: 80px; }
+      .gridcontainerSalados .headerInicio .logoVolverInicio .volverInicio a {
+        font-size: 10px;
+        font-weight: bold;
+        color: #424242;
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        padding: 6px;
+        padding-bottom: 22px;
+        display: flex;
+        justify-content: center; }
+    .gridcontainerSalados .headerInicio .buscadorInicio {
+      grid-area: buscadorInicio;
+      margin-left: 70px;
+      margin-top: 10px; }
+      .gridcontainerSalados .headerInicio .buscadorInicio input {
+        width: 800px;
+        border-radius: 15px;
+        background-color: rgba(88, 93, 96, 0.655); }
+    @media (max-width: 1235px) {
+      .gridcontainerSalados .headerInicio .buscadorInicio input {
+        width: 650px; } }
+    @media (max-width: 1070px) {
+      .gridcontainerSalados .headerInicio .buscadorInicio input {
+        width: 400px; } }
+    @media (max-width: 895px) {
+      .gridcontainerSalados .headerInicio .buscadorInicio input {
+        width: 400px; } }
+    @media (max-width: 802px) {
+      .gridcontainerSalados .headerInicio .buscadorInicio input {
+        width: 200px; } }
+    @media (max-width: 605px) {
+      .gridcontainerSalados .headerInicio .buscadorInicio input {
+        display: none; } }
+    .gridcontainerSalados .headerInicio .carritoLoginInicio {
+      grid-area: carritoLoginInicio; }
+      .gridcontainerSalados .headerInicio .carritoLoginInicio ul {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        padding-top: 28px; }
+        .gridcontainerSalados .headerInicio .carritoLoginInicio ul li {
+          padding: 5px;
+          text-decoration: none;
+          list-style: none; }
+      .gridcontainerSalados .headerInicio .carritoLoginInicio .bars #icon-menu {
+        display: none; }
+      @media (max-width: 930px) {
+        .gridcontainerSalados .headerInicio .carritoLoginInicio .bars #icon-menu {
+          display: block;
+          cursor: pointer;
+          font-size: 24px; } }
+      .gridcontainerSalados .headerInicio .carritoLoginInicio .carritoInicio {
+        padding-right: 20px; }
+        .gridcontainerSalados .headerInicio .carritoLoginInicio .carritoInicio img {
+          width: 20px; }
+      .gridcontainerSalados .headerInicio .carritoLoginInicio .loginInicio img {
+        width: 20px; }
+    @media (max-width: 930px) {
+      .gridcontainerSalados .headerInicio .carritoLoginInicio .carritoInicio, .gridcontainerSalados .headerInicio .carritoLoginInicio .loginInicio {
+        display: none; } }
+    .gridcontainerSalados .headerInicio .navbarInicio {
+      grid-area: navbarInicio; }
+      .gridcontainerSalados .headerInicio .navbarInicio ul {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px; }
+        .gridcontainerSalados .headerInicio .navbarInicio ul li {
+          padding: 0px 40px;
+          list-style: none; }
+          .gridcontainerSalados .headerInicio .navbarInicio ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #424242;
+            font-family: "Poppins", sans-serif;
+            padding: 10px; }
+    @media (max-width: 895px) {
+      .gridcontainerSalados .headerInicio .navbarInicio {
+        display: none; } }
+  .gridcontainerSalados .sidebarSalados {
+    grid-area: sidebarSalados;
+    background-color: rgba(237, 237, 237, 0.938);
+    height: auto;
+    padding: 30px; }
+  .gridcontainerSalados .mainSalados {
+    background-image: url(../img/fondoPantalla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    grid-area: mainSalados; }
+    .gridcontainerSalados .mainSalados .containerCardsSalados {
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center; }
+      .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados {
+        cursor: pointer;
+        margin: 10px 5px;
+        border: 2px solid lightgrey;
+        border-radius: 10px;
+        background-color: rgba(237, 237, 237, 0.938); }
+        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .coverCardSalados {
+          display: block;
+          justify-content: space-between; }
+          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .coverCardSalados img {
+            border-radius: 10px;
+            width: 204px; }
+        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados h2 {
+          color: rgba(106, 106, 106, 0.719);
+          font-weight: 800;
+          font-size: 15px;
+          font-family: "Poppins", sans-serif;
+          padding: 10px; }
+        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados p {
+          padding: 1px;
+          color: rgba(106, 106, 106, 0.719);
+          font-weight: 200;
+          font-size: 15px;
+          font-family: "Poppins", sans-serif; }
+        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .footerCardSalados h3 {
+          margin-top: 10px;
+          font-size: 40px;
+          font-weight: 200;
+          text-align: center;
+          color: #153758;
+          letter-spacing: 0.5px; }
+  .gridcontainerSalados .footerIndex {
+    grid-area: footerIndex;
+    background-color: rgba(152, 173, 185, 0.655); }
+
+@media (max-width: 700px) {
+  .gridcontainerSalados {
+    display: grid;
+    height: 1000px;
+    padding-top: 90px;
+    grid-template-columns: 200px auto;
+    grid-template-areas: "headerInicio headerInicio" "sidebarSalados sidebarSalados" "mainSalados mainSalados" "footerIndex footerIndex"; }
+    .gridcontainerSalados .headerInicio {
+      grid-area: headerInicio;
+      display: grid;
+      grid-template-columns: 200px auto 200px;
+      grid-template-areas: "logoVolverInicio buscadorInicio carritoLoginInicio" "logoVolverInicio navbarInicio carritoLoginInicio";
+      background-color: rgba(200, 217, 228, 0.874);
+      width: 100%;
+      height: 90px;
+      font-family: 'Poppins', sans-serif;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      border-radius: 5px; }
+      .gridcontainerSalados .headerInicio .logoVolverInicio {
+        grid-area: logoVolverInicio;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .gridcontainerSalados .headerInicio .logoVolverInicio .logoInicio {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 89px;
+          padding-bottom: 13px; }
+          .gridcontainerSalados .headerInicio .logoVolverInicio .logoInicio img {
+            width: 80px; }
+        .gridcontainerSalados .headerInicio .logoVolverInicio .volverInicio a {
+          font-size: 10px;
+          font-weight: bold;
+          color: #424242;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-decoration: none;
+          padding: 6px;
+          padding-bottom: 22px;
+          display: flex;
+          justify-content: center; }
+      .gridcontainerSalados .headerInicio .buscadorInicio {
+        grid-area: buscadorInicio;
+        padding-left: 70px;
+        padding-top: 10px; }
+        .gridcontainerSalados .headerInicio .buscadorInicio input {
+          width: 800px;
+          border-radius: 15px;
+          background-color: rgba(88, 93, 96, 0.655); }
+      .gridcontainerSalados .headerInicio .carritoLoginInicio {
+        grid-area: carritoLoginInicio; }
+        .gridcontainerSalados .headerInicio .carritoLoginInicio ul {
+          display: flex;
+          position: relative;
+          justify-content: center;
+          padding-top: 28px; }
+          .gridcontainerSalados .headerInicio .carritoLoginInicio ul li {
+            padding: 5px;
+            text-decoration: none;
+            list-style: none; }
+        .gridcontainerSalados .headerInicio .carritoLoginInicio .carritoInicio {
+          padding-right: 20px; }
+          .gridcontainerSalados .headerInicio .carritoLoginInicio .carritoInicio img {
+            width: 20px; }
+        .gridcontainerSalados .headerInicio .carritoLoginInicio .loginInicio img {
+          width: 20px; }
+      .gridcontainerSalados .headerInicio .navbarInicio {
+        grid-area: navbarInicio; }
+        .gridcontainerSalados .headerInicio .navbarInicio ul {
+          display: flex;
+          justify-content: center;
+          padding-top: 20px; }
+          .gridcontainerSalados .headerInicio .navbarInicio ul li {
+            padding: 0px 40px;
+            list-style: none; }
+            .gridcontainerSalados .headerInicio .navbarInicio ul li a {
+              text-decoration: none;
+              font-size: 18px;
+              font-weight: bold;
+              color: #424242;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              padding: 10px; }
+    .gridcontainerSalados .sidebarSalados {
+      grid-area: sidebarSalados;
+      background-color: rgba(237, 237, 237, 0.938);
+      height: auto;
+      padding: 30px;
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center; }
+      .gridcontainerSalados .sidebarSalados img {
+        width: 50px;
+        margin-top: -25px;
+        margin-left: 30px; }
+    .gridcontainerSalados .mainSalados {
+      background-image: url(../img/fondoPantalla.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      grid-area: mainSalados; }
+      .gridcontainerSalados .mainSalados .containerCardsSalados {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center; }
+        .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados {
+          cursor: pointer;
+          margin: 10px 5px;
+          border: 2px solid lightgrey;
+          border-radius: 10px;
+          background-color: rgba(237, 237, 237, 0.938); }
+          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .coverCardSalados {
+            display: block;
+            justify-content: space-between; }
+            .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .coverCardSalados img {
+              border-radius: 10px;
+              width: 204px; }
+          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados h2 {
+            color: rgba(106, 106, 106, 0.719);
+            font-weight: 800;
+            font-size: 15px;
+            font-family: "Poppins", sans-serif;
+            padding: 10px; }
+          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados p {
+            padding: 1px;
+            color: rgba(106, 106, 106, 0.719);
+            font-weight: 200;
+            font-size: 15px;
+            font-family: "Poppins", sans-serif; }
+          .gridcontainerSalados .mainSalados .containerCardsSalados .cardSalados .footerCardSalados h3 {
+            color: rgba(106, 106, 106, 0.719);
+            font-weight: 200;
+            font-size: 15px;
+            font-family: "Poppins", sans-serif; }
+    .gridcontainerSalados .footerIndex {
+      grid-area: footerIndex;
+      background-color: rgba(152, 173, 185, 0.655); } }

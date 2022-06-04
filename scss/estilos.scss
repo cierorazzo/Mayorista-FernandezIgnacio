@@ -1,4 +1,4 @@
-@import "media/responsive";
+@import "media/variables";
 
 //resetear
 *{
@@ -6,19 +6,20 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 //html INDEX
 /*html INDEX*/
 .headerIndex{
-    background-color: rgba(170, 178, 183, 0.655);
+    background-color: $color-header;
     width: 100%;
     height: 90px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-family;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 100; 
-
+    border-radius: 5px;
     .containerHeaderIndex{
         max-width: 2100px;
         width: 100%;
@@ -29,10 +30,6 @@
         margin: auto;
         padding-left: 20px;
         align-items: center;
-        #iconoMenu{
-            display: none;
-            padding-right: 120px;
-        }
         .logoHeaderIndex {
             height: 100%;
             display: flex;
@@ -61,7 +58,24 @@
                         font-size: 18px;
                         font-weight: bold;
                         color: #424242;
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-family: $font-family;
+                    }
+                    #icon-menu{
+                        display: none;
+                        cursor: pointer;
+                        font-size: 24px;
+                    }
+                    @media (max-width:823px){
+                        #icon-menu{
+                            display: block;
+                        }
+                    }
+                }
+                @media (max-width:823px){
+                    li{
+                        a{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -84,7 +98,7 @@
         width: 100%;
         padding-top: 50px;
         padding-bottom: 40px;
-        font-family: 'Poppins', sans-serif;
+        font-family: $font-family;
         margin-top: 100;
         .containerInfoIndex{
             max-width: 40%;
@@ -104,8 +118,7 @@
             }
             p{
                 margin-top: 10px;
-                color: lightgray;
-                border: #212121;
+                color: #fff;
                 padding-bottom: 40px;
                 padding-top: 30px;
             }
@@ -133,7 +146,8 @@
                 position: absolute;
                 bottom: -20px;
                 right: 0px;
-                width: 500px;
+                width: 400px;
+                margin-right: 40px;
             }
         }
         @media (max-width:905px) {
@@ -145,10 +159,10 @@
         }
     }
 }
-footer{
+.footerIndex{
     width: 100%;
     padding: 1px 0px;
-    background-color: rgba(170, 178, 183, 0.655);
+    background-color: $color-header;
     .containerFooter{
         display: flex;
         flex-wrap: wrap;
@@ -177,11 +191,13 @@ footer{
                 font-size: 18px;
             }
             h2{
+                text-decoration: none;
                 margin-bottom: 30px;
                 color: black;
                 font-weight: 700;
             }
             a{
+                text-decoration: none;
                 margin-top: 10px;
                 color: black;
                 font-weight: 600;
@@ -231,13 +247,14 @@ footer{
         position: relative;
         padding-top: 10%;
         .cajaTrasera{
+            font-family: $font-family;
             width: 100%;
             padding: 10px 20px;
             margin-left: 40px;
             display: flex;
             justify-content: center;
             backdrop-filter: blur(10px);
-            background-color: black;
+            background-color: rgba(0, 128, 255, 0.5);
             .cajaTraseraRegister{
                 margin: 100px 40px;
                 margin-left: 400px;
@@ -271,8 +288,14 @@ footer{
                 }
             }
         }
+        @media (max-width:700px){
+            .cajaTrasera{
+                display: none;
+            }
+        }
 
         .containerLogin{
+            font-family: $font-family;
             display: flex;
             align-items: center;
             width: 100%;
@@ -328,10 +351,15 @@ footer{
             
         }
     }
+    @media (max-width:700px){
+        .containerMainRegister{
+            margin-top: 420px;
+        }
+    }
 }
 
-//INICIASESION- registrarse.html
-/*INICIASESION- registrarse.html*/
+//INICIASESION- registrarse.html index
+/*INICIASESION- registrarse.html index*/
 .bodyRegistrarse{
     background-image: url(../img/fondoRegistro.jfif);
     background-size: cover;
@@ -339,6 +367,7 @@ footer{
     background-position: center;
     background-attachment: fixed;
     .formRegistrarse{
+        font-family: $font-family;
         margin:auto;
         display: flex;
         justify-content: space-between;
@@ -390,8 +419,8 @@ footer{
     }
 }
 
-//boton comoTrabajamos.html
-/*boton comoTrabajamos.html */
+//boton comoTrabajamos.html index
+/*boton comoTrabajamos.html index*/
 .containerCards{
     background-image: url(../img/fondoRegistro.jfif);
     background-size: cover;
@@ -418,7 +447,7 @@ footer{
             color: lightgrey;
             font-weight: 800;
             font-size: 30px;
-            font-family: 'Poppins', sans-serif;
+            font-family: $font-family;
         }
         p{
             padding: 8px;
@@ -426,7 +455,7 @@ footer{
             color: lightgrey;
             font-weight: 200;
             font-size: 15px;
-            font-family: 'Poppins', sans-serif;
+            font-family: $font-family;
         }
         .footerCard{
             h3, i{
@@ -434,17 +463,835 @@ footer{
                 color: lightgrey;
                 font-weight: 200;
                 font-size: 15px;
-                font-family: 'Poppins', sans-serif;
+                font-family: $font-family;
             }
         }
     }
 }
 
+//boton sobreNosotros.html index
+/*boton sobreNosotros.html index*/
+.sobreNosotros{
+    background-image: url(../img/fondoRegistro.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    .videoSobreNosotros{
+        overflow:hidden;
+        display: flex;
+        width: 450px;
+        margin-top: 120px;
+        iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+    }
+}
+
 //boton inicioMayorista.html
-.mainInicioMayorista{
+/*boton incioMayorista.html*/
+.inicioMayorista{
+    .headerInicio{
+        grid-area: headerInicio;
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        grid-template-areas: "logoVolverInicio buscadorInicio carritoLoginInicio"
+                            "logoVolverInicio navbarInicio carritoLoginInicio"
+        ;
+        background-color: $color-header;
+        width: 100%;
+        height: 90px;
+        font-family: $font-family;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100; 
+        border-radius: 5px;
+        .logoVolverInicio{
+            grid-area: logoVolverInicio;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logoInicio{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 89px;
+                padding-bottom: 13px;
+                img{
+                    width: 80px;
+                }
+            }
+            .volverInicio{
+                a{
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: #424242;
+                    font-family: $font-family;
+                    text-decoration: none;
+                    padding: 6px;
+                    padding-bottom: 22px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+    
+        }
+        .buscadorInicio{
+            grid-area: buscadorInicio;
+            margin-left: 70px;
+            margin-top: 10px;
+            input{
+                width: 800px;
+                border-radius: 15px;
+                background-color: rgba(88, 93, 96, 0.655);
+            }
+        }
+        @media (max-width:1235px){
+            .buscadorInicio{
+                input{
+                    width: 650px;
+                }
+            }
+        }
+        @media (max-width:1070px){
+            .buscadorInicio{
+                input{
+                    display: none;
+                }
+            }
+        }
+        @media (max-width:895px){
+            .buscadorInicio{
+                input{
+                    display: none;
+                }
+            }
+        }
+        @media (max-width:802px){
+            .buscadorInicio{
+                input{
+                    display: none;
+                }
+            }
+        }
+        @media (max-width:605px){
+            .buscadorInicio{
+                input{
+                    display: none;
+                }
+            }
+        }
+        .carritoLoginInicio{
+            grid-area: carritoLoginInicio;
+            ul{
+                display: flex;
+                position: relative;
+                justify-content: center;
+                padding-top: 28px;
+                li{
+                    padding: 5px;
+                    text-decoration: none;
+                    list-style: none;
+                }
+            }
+            .bars{
+                #icon-menu{
+                    display: none;
+                }
+                @media (max-width:930px){
+                    #icon-menu{
+                        display: block;
+                        cursor: pointer;
+                        font-size: 24px;
+                    }
+                }
+                
+            }
+            .carritoInicio{
+                padding-right: 20px;
+                img{
+                    width: 20px;
+                }
+            }
+            .loginInicio{
+                img{
+                    width: 20px;
+                }
+            }
+        }
+        @media (max-width:930px){
+            .carritoLoginInicio{
+                .carritoInicio, .loginInicio{
+                    display: none;
+                }
+            }
+        }
+        .navbarInicio{
+            grid-area: navbarInicio;
+            ul{
+                display: flex;
+                justify-content: center;
+                padding-top: 20px;
+                li{ 
+                    padding: 0px 40px;
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #424242;
+                        font-family: $font-family;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        @media (max-width:895px){
+            .navbarInicio{
+                display: none;
+            }
+        }
+    }
+    .mainInicio{
+        background-image: url(../img/fondoPantalla.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: auto;
+        .productosDestacadosInicio{
+           .tituloInicio{
+            text-align: center;
+            margin-top: 40px;
+            color: #212121;
+           } 
+           .containerCardsInicio{
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: absolute;
+                font-family: $font-family;
+                .cardInicio{
+                    background-image: url(../img/fondoPagina.jpg);
+                    background-position: 200px;
+                    width: 350px;
+                    margin: 5px;
+                    padding: 20px;
+                    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+                    background: rgba(255, 255, 255, 0.1);
+                    border-left: 2px solid rgba(255, 255, 255, 0.5);
+                    border-top: 1.5px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 15px;
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(5px);
+                    transition: all 300ms;
+                    &:hover{
+                        transform: translateY(-12px);
+                        transform: scale(0,2.0,2);
+                        z-index: 2;
+                    }
+                    .coverCardInicio{
+                        display: block;
+                        justify-content: space-between;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 14px;
+                        overflow: hidden;
+                        img{
+                            border-radius: 10px;
+                            width:204px;
+                            height: 100%;
+                            transition: all 100ms;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    h2{
+                        color: lightgray;
+                        font-size: 20px;
+                        font-weight: 800;
+                        margin-top: 10px;
+                    }
+                    h3{
+                        color: lightgray;
+                        margin-top: 10px;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                    p{
+                        margin-top: 10px;
+                        font-size: 40px;
+                        font-weight: 200;
+                        text-align: center;
+                        color: #153758;
+                        letter-spacing: 0.5px;
+                    }
+                    hr{
+                        margin-top: 20px;
+                        border: none;
+                        height: 0.1px;
+                        background-color: #212121;
+                    }
+                    .footerCardInicio{
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+        .promoTarjetasInicio{
+            .containerBoxInicio{
+                margin-top: 600px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 100px;
+                .boxInicio{
+                    width: 273px;
+                    height: 100px;
+                    background: $color-header;
+                    margin: 1px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.008,1.008);
+                        box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
+                        transition: 500ms;
+                        z-index: 1;
+                    }
+                    img{
+                        width: 23px;
+                        margin-top: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    h4{
+                        font-size: 14px;
+                        text-align: center;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+            }
+            @media (max-width:1108px){
+                .containerBoxInicio{
+                    margin-top: 1130px;
+                }
+            }
+            @media (max-width:741px){
+                .containerBoxInicio{
+                    margin-top: 1630px;
+                }
+            }
+        }
+        .logosPanificacion{
+            .containerLogoPanificacion{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 100px;
+                margin-top: 100px;
+                .boxLogoPanificacion{
+                    background-color: #fff;
+                    margin: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;  
+                    border: 2px solid lightgray;
+                    border-radius: 50%;
+                    height: 120px;  
+                    img{
+                        width: 125px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .publicidadCrowie{
+            display: flex;
+            flex-direction:row;
+            flex-wrap:wrap ;
+            margin-left: 10px;
+            .fotoCrowie{
+                display: flex;
+                justify-content:flex-start;
+                align-items:center;
+                margin-top: 30px;
+                padding: 10px;
+                margin-left: 50px;
+                img{
+                    border-radius: 4px;
+                    width: 450px;
+                    height: 550px;
+                }
+            }
+            .fotoCrowieMix{
+                display: flex;
+                justify-content:flex-end;
+                align-items:center;
+                margin-top: 30px;
+                padding: 10px;
+                margin-left: 50px;
+                img{
+                    border-radius: 4px;
+                    width: 350px;
+                    height: 550px;
+                }
+            }
+        }
+    }
+}
+
+//boton salados.html dulces.html panificacion.html inicioMayorista
+.gridcontainerSalados{
     display: grid;
-    grid-template-areas:
-     "carrousel carrousel carrousel"
-     "sidebar desarrollo desarrollo"
-     "sidebar desarrollo desarrollo";
+    height: 1000px;
+    padding-top: 90px;
+    grid-template-columns: 200px auto;
+    grid-template-areas: "headerInicio headerInicio"
+                        "sidebarSalados mainSalados"
+                        "footerIndex footerIndex";
+    
+    .headerInicio{
+                            grid-area: headerInicio;
+                            display: grid;
+                            grid-template-columns: 200px auto 200px;
+                            grid-template-areas: "logoVolverInicio buscadorInicio carritoLoginInicio"
+                                                "logoVolverInicio navbarInicio carritoLoginInicio"
+                            ;
+                            background-color: $color-header;
+                            width: 100%;
+                            height: 90px;
+                            font-family: $font-family;
+                            position: fixed;
+                            top: 0;
+                            right: 0;
+                            z-index: 100; 
+                            border-radius: 5px;
+                            .logoVolverInicio{
+                                grid-area: logoVolverInicio;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .logoInicio{
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding-left: 89px;
+                                    padding-bottom: 13px;
+                                    img{
+                                        width: 80px;
+                                    }
+                                }
+                                .volverInicio{
+                                    a{
+                                        font-size: 10px;
+                                        font-weight: bold;
+                                        color: #424242;
+                                        font-family: $font-family;
+                                        text-decoration: none;
+                                        padding: 6px;
+                                        padding-bottom: 22px;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                }
+                        
+                            }
+                            .buscadorInicio{
+                                grid-area: buscadorInicio;
+                                margin-left: 70px;
+                                margin-top: 10px;
+                                input{
+                                    width: 800px;
+                                    border-radius: 15px;
+                                    background-color: rgba(88, 93, 96, 0.655);
+                                }
+                            }
+                            @media (max-width:1235px){
+                                .buscadorInicio{
+                                    input{
+                                        width: 650px;
+                                    }
+                                }
+                            }
+                            @media (max-width:1070px){
+                                .buscadorInicio{
+                                    input{
+                                        width: 400px;
+                                    }
+                                }
+                            }
+                            @media (max-width:895px){
+                                .buscadorInicio{
+                                    input{
+                                        width: 400px;
+                                    }
+                                }
+                            }
+                            @media (max-width:802px){
+                                .buscadorInicio{
+                                    input{
+                                        width: 200px;
+                                    }
+                                }
+                            }
+                            @media (max-width:605px){
+                                .buscadorInicio{
+                                    input{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .carritoLoginInicio{
+                                grid-area: carritoLoginInicio;
+                                ul{
+                                    display: flex;
+                                    position: relative;
+                                    justify-content: center;
+                                    padding-top: 28px;
+                                    li{
+                                        padding: 5px;
+                                        text-decoration: none;
+                                        list-style: none;
+                                    }
+                                }
+                                .bars{
+                                    #icon-menu{
+                                        display: none;
+                                    }
+                                    @media (max-width:930px){
+                                        #icon-menu{
+                                            display: block;
+                                            cursor: pointer;
+                                            font-size: 24px;
+                                        }
+                                    }
+                                    
+                                }
+                                .carritoInicio{
+                                    padding-right: 20px;
+                                    img{
+                                        width: 20px;
+                                    }
+                                }
+                                .loginInicio{
+                                    img{
+                                        width: 20px;
+                                    }
+                                }
+                            }
+                            @media (max-width:930px){
+                                .carritoLoginInicio{
+                                    .carritoInicio, .loginInicio{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .navbarInicio{
+                                grid-area: navbarInicio;
+                                ul{
+                                    display: flex;
+                                    justify-content: center;
+                                    padding-top: 20px;
+                                    li{
+                                        padding: 0px 40px;
+                                        list-style: none;
+                                        a{
+                                            text-decoration: none;
+                                            font-size: 18px;
+                                            font-weight: bold;
+                                            color: #424242;
+                                            font-family: $font-family;
+                                            padding: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            @media (max-width:895px){
+                                .navbarInicio{
+                                    display: none;
+                                }
+                            }
+    }
+    .sidebarSalados{
+        grid-area: sidebarSalados;
+        background-color: rgba(237, 237, 237, 0.938);
+        height: auto;
+        padding: 30px;
+
+    }
+    .mainSalados{
+        background-image: url(../img/fondoPantalla.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        grid-area: mainSalados;;
+        .containerCardsSalados{
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            flex-wrap:wrap;
+            justify-content: center;
+            text-align: center;
+            .cardSalados{
+                cursor: pointer;
+                margin: 10px 5px;
+                border: 2px solid lightgrey;
+                border-radius: 10px;
+                background-color: rgba(237, 237, 237, 0.938);
+                .coverCardSalados{
+                    display: block;
+                    justify-content: space-between;
+                    img{
+                        border-radius: 10px;
+                        width:204px;
+                    }
+                }
+                h2{
+                    color: rgba(106, 106, 106, 0.719);
+                    font-weight: 800;
+                    font-size: 15px;
+                    font-family: $font-family;
+                    padding: 10px;
+                }
+                p{
+                    padding: 1px;
+                    color: rgba(106, 106, 106, 0.719);
+                    font-weight: 200;
+                    font-size: 15px;
+                    font-family: $font-family;
+                }
+                .footerCardSalados{
+                    h3{
+                        margin-top: 10px;
+                        font-size: 40px;
+                        font-weight: 200;
+                        text-align: center;
+                        color: #153758;
+                        letter-spacing: 0.5px;
+                    }
+                }
+            }
+        }
+
+    }
+    .footerIndex{
+        grid-area: footerIndex;
+        background-color: $color-footer;
+    }
+}
+@media (max-width:700px){
+    .gridcontainerSalados{
+        display: grid;
+        height: 1000px;
+        padding-top: 90px;
+        grid-template-columns: 200px auto;
+        grid-template-areas: "headerInicio headerInicio"
+                            "sidebarSalados sidebarSalados"
+                            "mainSalados mainSalados"
+                            "footerIndex footerIndex";
+        
+        .headerInicio{
+            grid-area: headerInicio;
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+            grid-template-areas: "logoVolverInicio buscadorInicio carritoLoginInicio"
+                                "logoVolverInicio navbarInicio carritoLoginInicio"
+            ;
+            background-color: $color-header;
+            width: 100%;
+            height: 90px;
+            font-family: 'Poppins', sans-serif;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 100; 
+            border-radius: 5px;
+            .logoVolverInicio{
+                grid-area: logoVolverInicio;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .logoInicio{
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 89px;
+                    padding-bottom: 13px;
+                    img{
+                        width: 80px;
+                    }
+                }
+                .volverInicio{
+                    a{
+                        font-size: 10px;
+                        font-weight: bold;
+                        color: #424242;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        text-decoration: none;
+                        padding: 6px;
+                        padding-bottom: 22px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+    
+            }
+            .buscadorInicio{
+                grid-area: buscadorInicio;
+                padding-left: 70px;
+                padding-top: 10px;
+                input{
+                    width: 800px;
+                    border-radius: 15px;
+                    background-color: rgba(88, 93, 96, 0.655);
+    
+                }
+            }
+            .carritoLoginInicio{
+                grid-area: carritoLoginInicio;
+                ul{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    padding-top: 28px;
+                    li{
+                        padding: 5px;
+                        text-decoration: none;
+                        list-style: none;
+                    }
+                }
+                .carritoInicio{
+                    padding-right: 20px;
+                    img{
+                        width: 20px;
+                    }
+                }
+                .loginInicio{
+                    img{
+                        width: 20px;
+                    }
+                }
+            }
+            .navbarInicio{
+                grid-area: navbarInicio;
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+                    li{
+                        padding: 0px 40px;
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #424242;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebarSalados{
+            grid-area: sidebarSalados;
+            background-color: rgba(237, 237, 237, 0.938);
+            height: auto;
+            padding: 30px;
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            flex-wrap:wrap;
+            justify-content: center;
+            text-align: center;
+            img{
+                width: 50px;
+                margin-top: -25px;
+                margin-left: 30px;
+            }
+    
+        }
+        .mainSalados{
+            background-image: url(../img/fondoPantalla.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            grid-area: mainSalados;;
+            .containerCardsSalados{
+                width: 100%;
+                display: flex;
+                overflow: hidden;
+                flex-wrap:wrap;
+                justify-content: center;
+                text-align: center;
+                .cardSalados{
+                    cursor: pointer;
+                    margin: 10px 5px;
+                    border: 2px solid lightgrey;
+                    border-radius: 10px;
+                    background-color: rgba(237, 237, 237, 0.938);
+                    .coverCardSalados{
+                        display: block;
+                        justify-content: space-between;
+                        img{
+                            border-radius: 10px;
+                            width:204px;
+                        }
+                    }
+                    h2{
+                        color: rgba(106, 106, 106, 0.719);
+                        font-weight: 800;
+                        font-size: 15px;
+                        font-family: $font-family;
+                        padding: 10px;
+                    }
+                    p{
+                        padding: 1px;
+                        color: rgba(106, 106, 106, 0.719);
+                        font-weight: 200;
+                        font-size: 15px;
+                        font-family: $font-family;
+                    }
+                    .footerCardSalados{
+                        h3{
+                            color: rgba(106, 106, 106, 0.719);
+                            font-weight: 200;
+                            font-size: 15px;
+                            font-family: $font-family;
+                        }
+                    }
+                }
+            }
+    
+        }
+        .footerIndex{
+            grid-area: footerIndex;
+            background-color: $color-footer;
+        }
+    }
 }
