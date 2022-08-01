@@ -296,5 +296,13 @@
     "yargs": "^17.4.1",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cierorazzo/Mayorista-FernandezIgnacio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cierorazzo/Mayorista-FernandezIgnacio/issues"
+  },
+  "homepage": "https://github.com/cierorazzo/Mayorista-FernandezIgnacio#readme",
   "description": ""
 }
