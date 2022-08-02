@@ -1,38 +1,38 @@
 [
     {
-      "precio": 500,
-      "id": 1,
-      "title": "Café",
+      "precio": 850,
+      "id": 13,
+      "title": "Papas 1kg",
       "thumbnailUrl": "https://picsum.photos/id/0/600"
     },
     {
-      "precio": 300,
-      "id": 2,
-      "title": "Pizza",
+      "precio": 320,
+      "id": 14,
+      "title": "Chizitos 1kg",
       "thumbnailUrl": "https://picsum.photos/id/10/600"
     },
     {
-      "precio": 100,
-      "id": 3,
-      "title": "Agua",
+      "precio": 465,
+      "id": 15,
+      "title": "Palitos Salados 1kg",
       "thumbnailUrl": "https://picsum.photos/id/20/600"
     },
     {
-      "precio": 50,
-      "id": 4,
-      "title": "Sandía",
+      "precio": 465,
+      "id": 16,
+      "title": "Mani Sab 1kg",
       "thumbnailUrl": "https://picsum.photos/id/30/600"
     },
     {
-      "precio": 10,
-      "id": 5,
-      "title": "Mango",
+      "precio": 380,
+      "id": 17,
+      "title": "Mani Salado 1kg",
       "thumbnailUrl": "https://picsum.photos/id/40/600"
     },
     {
-      "precio": 150,
-      "id": 6,
-      "title": "Chela",
+      "precio": 790,
+      "id": 18,
+      "title": "Conitos 3D 1kg",
       "thumbnailUrl": "https://picsum.photos/id/50/600"
     }
   ]

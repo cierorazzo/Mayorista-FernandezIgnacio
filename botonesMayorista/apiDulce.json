@@ -1,38 +1,32 @@
 [
     {
-      "precio": 500,
+      "precio": 210,
       "id": 1,
-      "title": "Café",
+      "title": "Budin",
       "thumbnailUrl": "https://picsum.photos/id/0/600"
     },
     {
-      "precio": 300,
+      "precio": 180,
       "id": 2,
-      "title": "Pizza",
+      "title": "Madalena",
       "thumbnailUrl": "https://picsum.photos/id/10/600"
     },
     {
-      "precio": 100,
+      "precio": 540,
       "id": 3,
-      "title": "Agua",
+      "title": "Pan Dulce",
       "thumbnailUrl": "https://picsum.photos/id/20/600"
     },
     {
-      "precio": 50,
+      "precio": 350,
       "id": 4,
-      "title": "Sandía",
+      "title": "Vainillas 444gr",
       "thumbnailUrl": "https://picsum.photos/id/30/600"
     },
     {
-      "precio": 10,
+      "precio": 100,
       "id": 5,
-      "title": "Mango",
+      "title": "Vainillas 144gr",
       "thumbnailUrl": "https://picsum.photos/id/40/600"
-    },
-    {
-      "precio": 150,
-      "id": 6,
-      "title": "Chela",
-      "thumbnailUrl": "https://picsum.photos/id/50/600"
     }
   ]
