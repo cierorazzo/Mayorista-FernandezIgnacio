@@ -783,7 +783,7 @@
         display: none; } }
   .gridcontainerSalados .sidebarSalados {
     grid-area: sidebarSalados;
-    background-color: rgba(237, 237, 237, 0.938);
+    background-color: white;
     height: auto;
     padding: 30px; }
   .gridcontainerSalados .mainSalados {

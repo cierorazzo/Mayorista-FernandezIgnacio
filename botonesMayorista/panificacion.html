@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML, CSS, SASS, GITHUB, RESPONSIVE">
     <link rel="stylesheet" href="../css/main.css">
     <script src="https://kit.fontawesome.com/f76e0ff4d6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>MacroFer- Panificación</title>
 </head>
 <body class="gridcontainerSalados">
@@ -85,154 +86,69 @@
     </aside>
 
     <article class="mainSalados">
-        <div class="containerCardsSalados">
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboArtesano500g.png" alt="">
-                </div>
-                <h2>ARTESANO 500G</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$420</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboArtesanoSemilla.png" alt="">
-                </div>
-                <h2>ARTESANO SEMILLA 400G</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$410</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboLiviano400g.png" alt="">
-                </div>
-                <h2>LIVIANO 400G</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$320</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboLiviano550g.png" alt="">
-                </div>
-                <h2>LIVIANO 550G</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$410</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboLino.png" alt="">
-                </div>
-                <h2>PAN CON LINO</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$290</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboIntegral.png" alt="">
-                </div>
-                <h2>PAN INTEGRAL</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$280</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboPanchoArtesano.png" alt="">
-                </div>
-                <h2>PANCHO ARTESANO</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$180</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboHambArtesano.png" alt="">
-                </div>
-                <h2>HAMB ARTESANA</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$180</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboPanchoNormal.png" alt="">
-                </div>
-                <h2>PANCHO ACTILECHE</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$150</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboHambSesamo.png" alt="">
-                </div>
-                <h2>HAMB C/SÉSAMO</h2>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$150</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboRapiditasClasicas.png" alt="">
-                </div>
-                <h2>RAPIDITAS</h2>
-                <p>Clásicas.</p>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$210</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboRapiditasIntegral.png" alt="">
-                </div>
-                <h2>RAPIDITAS</h2>
-                <p>Integrales.</p>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$210</h3>
-                </div>
-            </div>
-
-            <div class="cardSalados">
-                <div class="coverCardSalados">
-                    <img src="../img/BimboRapiditasLight.png" alt="">
-                </div>
-                <h2>RAPIDITAS</h2>
-                <p>Light.</p>
-                <hr>
-                <div class="footerCardSalados">
-                    <h3 class="precioCardSalados">$210</h3>
-                </div>
-            </div>
+        <div class="containerCarrito">
+            <h1>Carrito</h1>
+            <hr>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                  <tr id="footer">
+                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                  </tr>
+                </tfoot>
+              </table>
+            <div class="row" id="cards"></div>
         </div>
+
+        <template id="template-footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                    vaciar todo
+                </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+        
+        <template id="template-carrito">
+          <tr>
+            <th scope="row">id</th>
+            <td>Café</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span>500</span></td>
+          </tr>
+        </template>
+
+        <template id="template-card">
+            <div class="col-12 mb-2 col-md-4">
+              <div class="card">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5>Titulo</h5>
+                  <p>precio</p>
+                  <button class="btn btn-dark">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </template>
     </article>
 
     <footer class="footerIndex">
@@ -280,5 +196,6 @@
         </div>
             
     </footer>
+    <script src="../js/scriptPan.js"></script>
 </body>
 </html>
